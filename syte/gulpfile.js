@@ -5,28 +5,28 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function(){
-   return gulp.src(['app/sass/**/*.sass', 'app/sass/**/*scss'])
+   return gulp.src(['static/sass/**/*.sass', 'static/sass/**/*scss'])
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('static/css'))
     .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('min', function(){
-gulp.src('app/css/*.css')
+gulp.src('static/css/*.css')
     .pipe(minCSS())
-    .pipe(gulp.dest('app/css/minCSS'))
+    .pipe(gulp.dest('static/css/minCSS'))
 });
 
 gulp.task('browser-sync', function(){
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'temlates'
     },
   });
 });
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
-  gulp.watch('app/sass/**/*.sass', ['sass']);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
-  gulp.watch('app/**/*.html', browserSync.reload);
+  gulp.watch('static/sass/**/*.sass', ['sass']);
+  gulp.watch('static/js/**/*.js', browserSync.reload);
+  gulp.watch('temlates/**/*.html', browserSync.reload);
 });
