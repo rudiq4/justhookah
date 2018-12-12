@@ -1,0 +1,422 @@
+@import url(_fonts.css)
+
+%f_h1
+  font-family: 'Roboto Thin'
+  font-size: 50px
+
+%f_h3
+  font-family: 'Roboto-Bold'
+  font-size: 24px
+  font-weight: 600
+
+%f_p
+  font-family: 'Roboto Regular'
+  font-size: 16px
+  color: #636f8a
+
+// -- CONTENT_1  -------------------------------------------------------------------->
+
+.content_1
+  background: url(../img/Grid.png) no-repeat center
+  background-size: cover
+  background-color: #0e1a35
+  min-height: 850px
+
+  &:after
+      position: absolute
+      content: url(../img/Merkury.jpg)
+      box-shadow: 0 0 2px 7px #5584ff
+      margin:
+        top: 50px
+        left: -365px
+
+.title
+  padding-top: 330px
+
+  h1
+    @extend %f_h1 
+    color: white
+
+  p
+    font-family: 'Roboto Regular'
+    font-size: 32px
+    color: #636f8a
+    padding-bottom: 50px
+
+  button
+    width: 205px
+    height: 50px
+    font-family: 'Roboto Bold'
+    font-size: 18px
+    color: white
+    background-color: #5584ff
+    border-radius: 25px
+    border: none
+
+    &:hover
+      width: 195px
+      transition-duration: 0.7s
+
+// MEDIA CONTENT_1 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 991px)
+  .content_1
+    &:after
+     transform: scale(0.8)
+     margin-left: -330px
+
+  .title
+    h1
+      font-size: 37px
+
+    p
+      font-size: 23px
+
+    button
+      width: 190px
+      height: 40px
+      font-size: 14px
+
+      &:hover
+        width: 175px
+
+// --   CONTENT_2  -------------------------------------------------------------------->
+
+.content_2
+  padding-top: 340px
+
+  h3
+    @extend %f_h3
+
+  p
+    @extend %f_p
+    padding:
+      top: 10px
+      bottom: 20px
+
+  button
+    width: 210px
+    height: 45px
+    background: white
+    border: 1px solid grey
+    border-radius: 25px
+    font-weight: bold
+    font-size: 15px
+
+    &:hover
+      color: grey
+      border: 1px solid black
+      transition-duration: 0.7s
+
+  hr
+    position: absolute 
+    width: 150px
+    border-color: #dadee7
+    margin:
+      top: 40px
+      left: 300px
+
+.fa-5x
+  color: #5284ff
+  padding-bottom: 25px
+
+// MEDIA CONTENT_2 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 1199px)
+  .content_2
+    hr
+      margin-left: 225px
+
+@media screen and (max-width: 991px)
+  .content_2
+    padding-top: 280px
+
+    hr
+      width: 85px
+      margin-left: 180px
+
+    h3
+      font-size: 19px
+
+    p
+      font-size: 13px  
+
+    button
+      width: 180px
+      height: 35px
+      font-size: 12px
+
+// CONTENT_3 ---------------------------------------------------------------------->
+
+.content_3
+  padding-top: 200px
+
+  h1
+    @extend %f_h1
+  
+  p
+    @extend %f_p
+
+  i
+    letter-spacing: 1px
+    font-size: 22px
+    color: #5284ff
+
+  img
+    padding-left: 2px
+
+// MEDIA CONTENT_3 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 1200px)
+  .content_3
+    padding-top: 100px
+
+    h1
+      font-size: 37px
+
+    p
+      font-size: 13px
+
+    i
+      font-size: 16px
+
+    img
+      transform: scale(0.8)
+      margin-left: -100px
+
+@media screen and (max-width: 991px)
+  .content_3
+    margin-top: -100px
+    margin-bottom: 100px
+    
+    h1
+      text-align: center
+
+    img
+      display: none
+
+// CONTENT_4 ---------------------------------------------------------------------->
+
+.content_4
+  background: url(../img/Grid.png) no-repeat center
+  background-size: cover
+  background-color: #0e1a35
+  padding-top: 100px
+
+  h3,h1
+    font-family: 'Roboto Regular'
+    font-size: 30px
+    color: white
+  
+  h1
+    padding-left: 15px
+
+  p
+    @extend %f_p
+    padding-left: 15px
+
+  img
+    margin-right: 20px
+
+// MEDIA CONTENT_4 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 991px)
+  .content_4
+    h1
+      padding-top: 70px
+      text-align: center
+
+  .md-left
+    margin-left: 230px
+
+// CONTENT_5 ---------------------------------------------------------------------->
+
+.content_5
+  padding-top: 100px
+  background-color: #f6f7fa
+
+  h1
+    @extend %f_h1
+    padding-bottom: 15px
+
+  p
+    @extend %f_p
+
+  h3
+    @extend %f_h3
+    padding-top: 100px
+
+  img
+    margin:
+      top: -180px
+      left: 150px
+
+.hr_1
+  position: absolute
+  margin-top: -5px
+  width: 525px
+  height: 1px
+  background-color: #5584ff
+  border-color: #5584ff
+
+  &:after
+    position: absolute
+    content: url(../img/Elipsa1.png)
+    margin: 
+      top: -22px
+      left: 510px
+    
+.info_low
+  padding-top: 240px
+
+.hr_2
+  position: absolute
+  margin:
+    top: -5px
+    left: -220px
+  width: 475px
+  height: 1px
+  background-color: #5584ff
+  border-color: #5584ff
+
+  &:before
+    position: absolute
+    content: url(../img/Elipsa1.png)
+    margin: 
+      top: -22px
+      left: -505px
+
+// MEDIA CONTENT_5 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 991px)
+  .content_5
+    padding-top: 50px
+
+    h1
+      font-size: 37px
+
+    p
+      font-size: 13px
+
+    img
+      margin:
+        left: -50px
+        top: -160px
+      transform: scale(0.8)
+
+  .info_low
+    padding-top: 310px
+
+  .hr_1,.hr_2
+    display: none
+
+// CONTENT_6 ---------------------------------------------------------------------->
+
+.content_6
+  background-color: #f6f7fa
+  padding-top: 70px
+
+  h1
+    @extend %f_h1
+    padding-bottom: 50px
+
+  button
+    width: 205px
+    height: 50px
+    margin-bottom: 50px
+    font-family: 'Roboto Bold'
+    font-size: 18px
+    color: white
+    background-color: #5584ff
+    border-radius: 25px
+    border: none
+
+    &:before
+      position: absolute
+      content: ''
+      display: block
+      height: 1px
+      width: 200px
+      background: #dadee7
+      margin: 
+        left: -240px
+        top: 10px
+
+    &:after
+      position: absolute
+      content: ''
+      display: block
+      height: 1px
+      width: 200px
+      background: #dadee7
+      margin: 
+        left: 240px
+        top: -18px
+
+.box_price
+  box-shadow: 4px 4px 4px 5px grey
+  padding-bottom: 20px
+  margin-bottom: 60px
+
+  h3
+    @extend %f_h3
+    text-transform: uppercase
+    padding-top: 35px
+
+  p
+    font-size: 55px
+    font-weight: bold
+    padding: 
+      top: 15px
+      bottom: 15px
+
+  span
+    font-size: 20px
+    opacity: 0.5
+
+  i
+    font-size: 20px
+    padding-bottom: 15px
+
+.fa-check-circle-o
+  color: #5284ff
+
+.fa-close
+  color: red
+
+.p_style
+  @extend %f_p
+  padding-bottom: 25px
+
+// MEDIA CONTENT_6 ---------------------------------------------------------------------->
+
+@media screen and (max-width: 991px)
+  .content_6
+    h1
+      margin-left: 50px
+
+    button
+      margin-left: 10px
+
+// FOOTER ---------------------------------------------------------------------->
+
+footer
+  color: #8492af
+  background-color: #0e1a35
+
+  p
+    margin-top: 40px
+    @extend %f_p
+
+  li
+    margin-top: 40px
+    @extend %f_p
+    display: inline-block
+    padding-right: 25px
+
+  a
+    color: #8492af
+
+    &:hover
+      text-decoration: none
+      color: #8492af
