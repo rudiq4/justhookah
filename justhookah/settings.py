@@ -36,7 +36,7 @@ ROOT_URLCONF = 'justhookah.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'syte/temlpates', '')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -85,3 +85,4 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+
