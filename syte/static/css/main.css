@@ -68,3 +68,28 @@
   margin-left: 150px;
   border-radius: 5px;
 }
+
+
+
+/* ===== COPYRIGHT ===== */
+#copyright {
+    background-color: #fff;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#footer + #copyright { margin-top: 0px; }
+#copyright .container { padding: 13px 0 10px 0; }
+
+.gecko #copyright .container { padding-top: 5px; padding-bottom: 4px; }
+
+#copyright .center { text-align: center; }
+#copyright .left { text-align: left; }
+#copyright .right { text-align: right; }
+
+#copyright div p { color: #959494; font-size: 12px;  }
+#copyright div p:first-child { margin-top: 0px; }
+#copyright div p:last-child { margin-bottom: 0px; }
+#copyright div p a { color: #575858; font-size: 12px; }
+#copyright div p a:hover { color: #000; }
